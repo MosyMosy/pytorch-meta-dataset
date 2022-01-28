@@ -10,7 +10,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 #SBATCH --mem=127000M
-#SBATCH --time=0-04:00
+#SBATCH --time=0-06:00
 #SBATCH --account=rrg-ebrahimi
 
 nvidia-smi
@@ -26,7 +26,7 @@ cp -r ~/scratch/metadatasets/records/ .
 cp -r ~/scratch/pytorch-meta-dataset .
 cd pytorch-meta-dataset
 
-bash scripts/make_records/make_index_files.sh ../metadatasets/records
+bash scripts/make_records/make_index_files.sh ../records
 
 echo "-----------------------------------<End of run the program>---------------------------------"
 date +"%T"
