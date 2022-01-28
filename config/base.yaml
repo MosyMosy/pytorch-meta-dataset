@@ -35,7 +35,7 @@ DATA:
     val_source: 'ilsvrc_2012'
     test_source: 'ilsvrc_2012'
     batch_size: 256
-    path: '/home/malik/dataset/natural/converted'
+    path: '../metadatasets/records'
     split: 'train'
     num_workers: 4
     train_transforms: ['random_resized_crop', 'jitter', 'random_flip', 'to_tensor', 'normalize']
@@ -47,7 +47,7 @@ DATA:
 EVAL-GENERAL:
     eval_metrics: ['Acc']
     plot_freq: 10
-    model_tag: 'best'
+    model_tag: 'best_plus' # 'best'
     eval_mode: 'test'
     val_episodes: 100
     val_batch_size: 1

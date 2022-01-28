@@ -353,10 +353,13 @@ def save_checkpoint(state: Any,
         shutil.copyfile(folder / filename, folder / 'model_best.pth.tar')
 
 
-def load_checkpoint(model, model_path, type='best') -> None:
+def load_checkpoint(model, model_path, type='best_plus') -> None:
     if type == 'best':
         checkpoint = torch.load('{}/model_best.pth.tar'.format(model_path))
         print(f'Loaded model from {model_path}/model_best.pth.tar')
+    elif type == 'best_plus':
+        checkpoint = torch.load('{}/checkpoint_best.pkl'.format(model_path))
+        print(f'Loaded model from {model_path}/checkpoint_best.pkl')
     elif type == 'last':
         checkpoint = torch.load('{}/checkpoint.pth.tar'.format(model_path))
         print(f'Loaded model from {model_path}/checkpoint.pth.tar')
