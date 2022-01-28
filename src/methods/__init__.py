@@ -5,3 +5,5 @@ from .simpleshot import *
 from .maml import *
 from .protonet import *
 from .finetune import *
+from .BN import *
+from .FN import *
