@@ -37,7 +37,7 @@ DATA:
     batch_size: 256
     path: '../metadatasets/records'
     split: 'train'
-    num_workers: 4
+    num_workers: 0
     train_transforms: ['random_resized_crop', 'jitter', 'random_flip', 'to_tensor', 'normalize']
     test_transforms: ['resize', 'center_crop', 'to_tensor', 'normalize']
     num_unique_descriptions: 0

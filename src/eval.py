@@ -232,8 +232,7 @@ if __name__ == "__main__":
     distributed = world_size > 1
     args.distributed = distributed
     args.port = find_free_port()
-    # mp.spawn(main_worker,
-    #          args=(world_size, args),
-    #          nprocs=world_size,
-    #          join=True)
-    main_worker(world_size, args)
+    mp.spawn(main_worker,
+             args=(world_size, args),
+             nprocs=world_size,
+             join=True)
