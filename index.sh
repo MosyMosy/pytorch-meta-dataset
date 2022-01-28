@@ -26,7 +26,7 @@ cp -r ~/scratch/metadatasets/records/ .
 cp -r ~/scratch/pytorch-meta-dataset .
 cd pytorch-meta-dataset
 
-bash scripts/make_records/make_index_files.sh ../records
+bash scripts/make_records/make_index_files.sh ../metadatasets/records
 
 echo "-----------------------------------<End of run the program>---------------------------------"
 date +"%T"
