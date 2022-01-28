@@ -251,8 +251,8 @@ class ResNet(nn.Module):
 
         return x
 
-    def forward(self, x: Tensor) -> Tensor:
-        return self._forward_impl(x)
+    def forward(self, x: Tensor, feature=False) -> Tensor:
+        return self._forward_impl(x,feature)
 
 
 def _resnet(
