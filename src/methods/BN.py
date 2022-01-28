@@ -11,7 +11,7 @@ from ..metrics import Metric
 from .utils import get_one_hot, extract_features
 
 
-class Finetune(FSmethod):
+class BN(FSmethod):
     """
     Implementation of Finetune (or Baseline method) (ICLR 2019) https://arxiv.org/abs/1904.04232
     """
