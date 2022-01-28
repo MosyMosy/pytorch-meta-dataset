@@ -16,7 +16,7 @@
 
 nvidia-smi
 
-source ~/ENV_MD/bin/activate
+source ~/ENV/bin/activate
 
 echo "------------------------------------< Data preparation>----------------------------------"
 echo "Copying the source code"
@@ -27,7 +27,7 @@ cp -r ~/scratch/metadatasets .
 cp -r ~/scratch/pytorch-meta-dataset .
 cd pytorch-meta-dataset
 
-bash scripts/test_all.sh BN Resnet18
+bash scripts/test_all.sh BN resnet18
 bash scripts/test_all.sh FN Resnet18
 
 echo "-----------------------------------<End of run the program>---------------------------------"
