@@ -236,4 +236,4 @@ if __name__ == "__main__":
     #          args=(world_size, args),
     #          nprocs=world_size,
     #          join=True)
-    main_worker(0,1,args)
+    main_worker(world_size, args)
