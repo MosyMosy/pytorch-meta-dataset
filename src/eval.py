@@ -97,13 +97,14 @@ def main_worker(rank: int,
     # ==============================================
     current_split = "TEST" if args.eval_mode == 'test' else "VALID"
 
-    _, num_classes_base = get_dataloader(args=args,
-                                         source=args.base_source,
-                                         batch_size=args.batch_size,
-                                         world_size=world_size,
-                                         split=Split["TRAIN"],
-                                         episodic=True,
-                                         version=args.loader_version)
+    # _, num_classes_base = get_dataloader(args=args,
+    #                                      source=args.base_source,
+    #                                      batch_size=args.batch_size,
+    #                                      world_size=world_size,
+    #                                      split=Split["TRAIN"],
+    #                                      episodic=True,
+    #                                      version=args.loader_version)
+    num_classes_base = 1000
 
     test_loader, num_classes_test = get_dataloader(args=args,
                                                    source=args.test_source,
