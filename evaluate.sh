@@ -27,8 +27,8 @@ cp -r ~/scratch/metadatasets .
 cp -r ~/scratch/pytorch-meta-dataset .
 cd pytorch-meta-dataset
 
-bash scripts/test_all.sh BN resnet18
-bash scripts/test_all.sh FN Resnet18
+bash scripts/test_all_BN.sh
+bash scripts/test_all_FN.sh
 
 echo "-----------------------------------<End of run the program>---------------------------------"
 date +"%T"
