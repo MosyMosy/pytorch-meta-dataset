@@ -1,0 +1,2 @@
+method,arch,base_source,test_source,finetune_all_layers,task,acc,std
+FN,resnet18,ilsvrc_2012FN,cu_birds,False,591,0.6293,0.0102

@@ -1,0 +1,2 @@
+method,arch,base_source,test_source,finetune_all_layers,task,acc,std
+BN,resnet18,ilsvrc_2012BN,aircraft,False,591,0.5196,0.0103

@@ -1,0 +1,2 @@
+method,arch,base_source,test_source,finetune_all_layers,task,acc,std
+FN,resnet18,ilsvrc_2012FN,omniglot,False,591,0.6586,0.0134

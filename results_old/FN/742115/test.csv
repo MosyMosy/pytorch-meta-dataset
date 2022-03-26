@@ -1,0 +1,2 @@
+method,arch,base_source,test_source,finetune_all_layers,task,acc,std
+FN,resnet18,ilsvrc_2012FN,quickdraw,False,591,0.6396,0.0099

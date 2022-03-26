@@ -1,0 +1,2 @@
+method,arch,base_source,test_source,finetune_all_layers,task,acc,std
+FN,resnet18,ilsvrc_2012FN,traffic_sign,False,591,0.5818,0.0109
